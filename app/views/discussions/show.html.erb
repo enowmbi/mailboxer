@@ -2,6 +2,8 @@
 
 <%= render @discussion %>
 
+<%= render @discussion.comments %>
+
 <div>
   <%= link_to "Edit this discussion", edit_discussion_path(@discussion) %> |
   <%= link_to "Back to discussions", discussions_path %>
